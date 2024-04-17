@@ -1,0 +1,30 @@
+$(document).ready(function(){
+    //Normal
+    $("#btn_ocultar_parrafos").click(function(){
+        $("p").hide();
+    });
+
+    $("#btn_mostrar_parrafos").click(function(){
+        $("p").show();
+    });
+
+    //Despacio
+    $("#btn_ocultar_despacio").click(function(){
+        $("p").hide("slow");
+    });
+    
+
+    $("#btn_mostrar_despacio").click(function(){
+        $("p").show("slow");
+    });
+
+    //Con tiempo
+    $("btn_ocultar_slide").click(function(){
+        $("p").sildeUp(2000);
+    });
+
+    $("btn_mostrar_slide").click(function(){
+        $("p").sildeDown(2000);
+    });
+
+});
