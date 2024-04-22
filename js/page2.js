@@ -1,32 +1,18 @@
-$(document).ready(function(){
-    $("#btn_agregar_fila").click(function(){
-        $("tabla_datos>tbody").append("<tr><td>1</td><td></td><td></td></tr>")
+$(document).ready(function() {
+    // Evento para agregar fila
+    $("#btn_agregar_fila").click(function() {
+      var fila = "<tr><td></td><td></td><td></td></tr>";
+      $("#tabla_datos tbody").append(fila);
     });
-    
-    //forma 1
-    //var fila = 1;
-    //$("#btn_agregar_fila").click(function(){
-        //var nueva_fila = '<tr>\
-       // <td></td>\
-        //<td></td>\
-       // <td></td>\
-        // </tr>'  
-    //$("table#tabla_datos").append(nueva_fila);
-    //fila += 1;
-    //});
-
-    //FORMA 2
-    $("#botones #btn_agregar_fila").click(function(){
-        let fila = "<tr><td>1</td><td></td><td></td></tr>";  
-        $("tabla_datos>tbody").append(fila);
+  
+    // Evento para eliminar fila
+    $("#btn_eliminar_fila").click(function() {
+      $("#tabla_datos tbody tr:last-child").remove();
     });
-
-    $("#botones #btn_agregar_fila").click(function(){
-        let fila = "<tr><td>1</td><td></td><td></td></tr>";  
-        $("table tbody tr:last-child").remove(fila);
-    });
-
 });
+
+  
+  
 
 
 

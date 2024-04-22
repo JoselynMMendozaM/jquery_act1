@@ -19,12 +19,11 @@ $(document).ready(function(){
     });
 
     //Con tiempo
-    $("btn_ocultar_slide").click(function(){
-        $("p").sildeUp(2000);
+    $("#btn_ocultar_slide").click(function(){
+        $("p").slideUp(2000);
     });
-
-    $("btn_mostrar_slide").click(function(){
-        $("p").sildeDown(2000);
+    $("#btn_mostrar_slide").click(function(){
+        $("p").slideDown(2000);
     });
 
 });
