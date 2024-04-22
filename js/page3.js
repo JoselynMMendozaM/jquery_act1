@@ -10,7 +10,7 @@ $(document).ready(function() {
         } else {
             $('#nameError').hide();
             var largoTexto = name.length;
-            $('#result').html('El nombre tiene ' + largoTexto + ' caracteres.');
+            $('#result').html('<h2> El nombre tiene ' + largoTexto + ' caracteres. <h2>');
         }
 
         if (nota1 === '') {
@@ -53,9 +53,9 @@ $(document).ready(function() {
             var result_promedio = 'El promedio es ' + promedio.toFixed(2) + '.';
 
             if (promedio >= 70) {
-                result_promedio += ` ¡Felicidades ${name}! Has aprobado con un promedio de ${promedio.toFixed(2)}.`;
+                result_promedio += `<h2> ¡Felicidades ${name}! Has aprobado con un promedio de ${promedio.toFixed(2)}. </h2>`;
             } else {
-                result_promedio += ` Lo siento ${name}, has reprobado con un promedio de ${promedio.toFixed(2)}.`;
+                result_promedio += `<h2> Lo siento ${name}, has reprobado con un promedio de ${promedio.toFixed(2)}. </h2>`;
             }
 
             $('#result').html(result_promedio);
