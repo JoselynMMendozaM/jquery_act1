@@ -9,130 +9,44 @@
     <script src="js/jquery-3.7.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/page1.js"></script>
+    <style>
+        body{
+            background-image: url(img/jquery.jpeg);
+        }
+    </style>
 
     <title>Página 1</title>
 </head>
 <body>
-
-    <header>
-        <img src="img/banner.jpg" class="img-fluid" alt="">
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">FullStack DEV.</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse text-center" id="navbarNavDarkDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Página no. 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page2.html">Página no. 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page3.html">Página no. 3</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-
-    <main class="container-fluid text-uppercase">
-        <section class="row py-4">
-            <div class="col-12 col-sm-6 col-md-3 ">
-                <input type="button" class="btn btn-outline-light text-uppercase mb-3 form-control rounded-pill" id="btn_ocultar_parrafos" value="Ocultar párrafos">
+    <section id="info">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">FullStack DEV.</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse text-center" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">Página no. 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Página no. 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Página no. 3</a>
+                    </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <input type="button" class="btn btn-outline-light text-uppercase mb-3 form-control rounded-pill" id="btn_mostrar_parrafos" value="Mostrar párrafos">
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <input type="button" class="btn btn-outline-light text-uppercase mb-3 form-control rounded-pill" id="btn_ocultar_despacio" value="Ocultar despacio">
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-
-                <input type="button" class="btn btn-outline-light text-uppercase mb-3 form-control rounded-pill" id="btn_mostrar_despacio" value="Mostrar despacio">
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">               
-                <input type="button" class="btn btn-outline-light text-uppercase mb-3 form-control rounded-pill" id="btn_ocultar_slide" value="Ocultar forma slide">
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <input type="button" class="btn btn-outline-light text-uppercase mb-3 form-control rounded-pill" id="btn_mostrar_slide" value="Mostrar forma slide">
-            </div>
-        </section>
-            
+        </nav>
         
-        <div class="container row text-center text-white">
-            <div class="col-sm-12 col-md-6">
-                <p id="p1">Párrafo 1</p>
+        <footer>
+            <div class="text-center p-3 bg-dark text-white">
+                © 2020060348 Joselyn Michelle Mendoza Molina
             </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p2">Párrafo 2</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p3">Párrafo 3</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p4">Párrafo 4</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p5">Párrafo 5</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p6">Párrafo 6</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p7">Párrafo 7</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p8">Párrafo 8</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p9">Párrafo 9</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p10">Párrafo 10</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p11">Párrafo 11</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p12">Párrafo 12</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p13">Párrafo 13</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p14">Párrafo 14</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p15">Párrafo 15</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p16">Párrafo 16</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p17">Párrafo 17</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p18">Párrafo 18</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p19">Párrafo 19</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p id="p20">Párrafo 20</p>
-            </div>
-        </div>
+        </footer>
+    </section>
 
-    </main>
-    
-    <footer>
-        <div class="text-center p-3 bg-dark text-white">
-            © 2020060348 Joselyn Michelle Mendoza Molina
-        </div>
-    </footer>
 </body>
 </html>
